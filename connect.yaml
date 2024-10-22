@@ -1,7 +1,7 @@
 deployAs:
   - name: cartrecommendation
     applicationType: service
-    endpoint: /service
+    endpoint: /cart-recommendation
     scripts:
       postDeploy: npm install && npm run build && npm run connector:post-deploy
       preUndeploy: npm install && npm run build && npm run connector:pre-undeploy
@@ -29,7 +29,7 @@ deployAs:
           required: true
   - name: pdprecommendation
     applicationType: service
-    endpoint: /service
+    endpoint: /pdp-recommendation
     scripts:
       postDeploy: npm install && npm run build && npm run connector:post-deploy
       preUndeploy: npm install && npm run build && npm run connector:pre-undeploy
